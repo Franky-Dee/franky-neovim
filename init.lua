@@ -2,6 +2,7 @@ vim.cmd("set expandtab ")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
+vim.g.mapleader = " "
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -21,9 +22,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    }
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+vim.keymap.set("n", "<C-f>", builtin.live_grep, {})
+
 require("catppuccin").setup()
 vim.cmd.colorscheme "catppuccin"
