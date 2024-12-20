@@ -1,6 +1,7 @@
 ## Nvim TODO
 ##### The following is a list of feature I am still planning to add and things I have to make sure of
 - [ ] Add lazy git, to be able to make use of git functionality
+    - [ ] Add plugin to call lazy git from nvim
 - [ ] Add python:
   - [ ] LSP
   - [ ] Linter
