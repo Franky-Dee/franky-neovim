@@ -8,7 +8,7 @@
   - [x] Formatter
 - [ ] Add odoo lsp
 - [ ] Add tabbing for pages
-- [ ] Ensure odoo runs
+- [x] Ensure odoo runs
 - [ ] Add syntax auto complete
 - [x] Add split window functionality
   - [x] Command to split window horizontally and vertically

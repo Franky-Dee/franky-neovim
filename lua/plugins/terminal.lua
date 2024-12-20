@@ -6,5 +6,6 @@ return {
         }
     end,
 
-    vim.keymap.set('n', '<leader>ot', ':ToggleTerm<CR>', {})
+    vim.keymap.set('n', '<leader>ot', ':ToggleTerm<CR>', {}),
+    vim.keymap.set('t', '<C-c>', '<C-\\><C-n>', {}),
 }
