@@ -8,3 +8,5 @@ vim.g.mapleader = " "
 -- Window Management
 vim.keymap.set('n', '<Leader>sv', ':vsplit<CR>', {})
 vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})
+
+vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
