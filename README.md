@@ -6,10 +6,10 @@
   - [x] LSP
   - [x] Linter
   - [x] Formatter
-- [ ] Add odoo lsp
+- [ ] add odoo lsp
 - [ ] Add tabbing for pages
 - [x] Ensure odoo runs
-- [ ] Add syntax auto complete
+- [x] Add syntax auto complete
 - [x] Add split window functionality
   - [x] Command to split window horizontally and vertically
   - [x] Command to close window
