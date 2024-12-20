@@ -7,7 +7,7 @@
   - [x] Linter
   - [x] Formatter
 - [ ] add odoo lsp
-- [ ] Add tabbing for pages
+- [x] Add tabbing for pages
 - [x] Ensure odoo runs
 - [x] Add syntax auto complete
 - [x] Add split window functionality
