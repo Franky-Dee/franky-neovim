@@ -5,4 +5,6 @@ vim.cmd("set shiftwidth=4")
 vim.wo.relativenumber = true
 vim.g.mapleader = " "
 
-
+-- Window Management
+vim.keymap.set('n', '<Leader>sv', ':vsplit<CR>', {})
+vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})

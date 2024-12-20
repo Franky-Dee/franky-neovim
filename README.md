@@ -1,20 +1,18 @@
 ## Nvim TODO
 ##### The following is a list of feature I am still planning to add and things I have to make sure of
-- [ ] Add lazy git, to be able to make use of git functionality
-    - [ ] Add plugin to call lazy git from nvim
+- [x] Add lazy git, to be able to make use of git functionality
+    - [x] Add plugin to call lazy git from nvim
 - [ ] Add python:
   - [ ] LSP
   - [ ] Linter
   - [ ] Formatter
 - [ ] Add odoo lsp
 - [ ] Ensure odoo runs
-- [ ] Add command to open integrated terminal (:term)
 - [ ] Add syntax auto complete
 - [ ] Add suggestions
-- [ ] Add split window functionality
-  - [ ] Command to split window horizontally and vertically
-  - [ ] Command to close window
-  - [ ] Commands to resize windows
+- [x] Add split window functionality
+  - [x] Command to split window horizontally and vertically
+  - [x] Command to close window
 - [ ] Add react:
   - [ ] LSP
   - [ ] Linter
