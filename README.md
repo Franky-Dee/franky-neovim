@@ -7,9 +7,13 @@
   - [ ] Formatter
 - [ ] Add odoo lsp
 - [ ] Ensure odoo runs
+- [ ] Add command to open integrated terminal (:term)
 - [ ] Add syntax auto complete
 - [ ] Add suggestions
-- [ ] Add split window functionality and shortcuts
+- [ ] Add split window functionality
+  - [ ] Command to split window horizontally and vertically
+  - [ ] Command to close window
+  - [ ] Commands to resive windows
 - [ ] Add react:
   - [ ] LSP
   - [ ] Linter
