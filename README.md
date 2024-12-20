@@ -13,7 +13,7 @@
 - [ ] Add split window functionality
   - [ ] Command to split window horizontally and vertically
   - [ ] Command to close window
-  - [ ] Commands to resive windows
+  - [ ] Commands to resize windows
 - [ ] Add react:
   - [ ] LSP
   - [ ] Linter
