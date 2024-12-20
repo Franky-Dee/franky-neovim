@@ -5,6 +5,7 @@
   - [ ] LSP
   - [ ] Linter
   - [ ] Formatter
+- [ ] Add odoo lsp
 - [ ] Ensure odoo runs
 - [ ] Add syntax auto complete
 - [ ] Add suggestions
