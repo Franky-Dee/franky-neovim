@@ -39,7 +39,7 @@ return {
         dapui.setup({
             controls = {
                 element = "repl",
-                enabled = false,
+                enabled = true,
                 icons = {
                     disconnect = "",
                     pause = "",
