@@ -18,4 +18,8 @@ vim.opt.wrap = false
 vim.keymap.set('n', '<Leader>sv', ':vsplit<CR>', {})
 vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})
 
+-- Save and Quit
+vim.keymap.set('n', '<C-s>', ':w', {})
+vim.keymap.set('n', '<C-q>', ':q', {})
+
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
