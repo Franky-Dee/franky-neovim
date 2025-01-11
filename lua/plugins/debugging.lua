@@ -8,6 +8,19 @@ return {
         local dap = require("dap")
         local dapui = require("dapui")
 
+        -- Define custom highlight groups
+        vim.api.nvim_set_hl(0, "DapBreakpointText", { fg = "#00FF00", bold = true }) -- Green for the dot
+        vim.api.nvim_set_hl(0, "DapBreakpointLine", { bg = "#3B4252" })          -- Dim background for the line
+        vim.api.nvim_set_hl(0, "DapBreakpointNum", { fg = "#00FF00", bold = true }) -- Green for the line number
+
+        -- Define custom sign for breakpoints with highlight groups
+        vim.fn.sign_define('DapBreakpoint', {
+            text = '●',
+            texthl = 'DapBreakpointText',
+            linehl = 'DapBreakpointLine',
+            numhl = 'DapBreakpointNum'
+        })
+
         -- DAP configuration for Python
         vim.g.dap_open_Float = false
 
