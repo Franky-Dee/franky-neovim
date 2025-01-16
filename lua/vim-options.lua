@@ -5,6 +5,8 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 -- Line Numbers --
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.cursorline = true
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#00FF00", bold = true })
 
 -- Tabbing --
 vim.opt.tabstop = 4
