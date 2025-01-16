@@ -16,6 +16,9 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
 
+-- Scroll Offset
+vim.opt.scrolloff = 8
+
 -- Window Management
 vim.keymap.set('n', '<Leader>sv', ':vsplit<CR>', {})
 vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})
