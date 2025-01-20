@@ -27,4 +27,8 @@ vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})
 vim.keymap.set('n', '<C-s>', ':w', {})
 vim.keymap.set('n', '<C-q>', ':q', {})
 
+-- Vim Remaps
+vim.keymap.set('i', '<C-[>', '<CapsLock>', { noremap = true, silent = true })
+
+
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
