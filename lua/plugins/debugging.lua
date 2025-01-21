@@ -40,6 +40,8 @@ return {
                 args = {
                     '--config=/home/franky/Desktop/Workspaces/12.0/conf/odoo.conf',
                     '--limit-time-real=10000000',
+                    -- '--test-enable',
+                    -- '--test-tags=loan',
                 },
                 cwd = '/home/franky/Desktop/Workspaces/12.0/odoo',
                 console = 'internalConsole',
