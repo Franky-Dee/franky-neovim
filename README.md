@@ -53,6 +53,7 @@
 - `=` - format highlighted
 - `shift ~ i` - insert to multiple lines (`esc` after to apply change)
 - `g ~ c` - comment highlighted lines
+- `v ~ i ~ w` - visual in word (highlight word)
 #### File manipulation
 - `%` - create file in current directory
 - `:e` - create new file
@@ -91,3 +92,6 @@
 - `gd` - go to definition
 - `space ~ ca` - show avaliable code actions
 - `space ~ gf` - format with lsp
+#### Other
+- `space ~ fml` - make it rain
+
