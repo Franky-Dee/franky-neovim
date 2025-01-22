@@ -15,7 +15,7 @@ return {
                     col = "50%",
                 },
                 size = {
-                    width = "40%",
+                    width = "50%",
                     height = "auto",
                 },
                 border = {
@@ -26,7 +26,6 @@ return {
                     },
                 },
                 win_options = {
-                    winblend = 10,
                     winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
                 },
             },
