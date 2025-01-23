@@ -27,4 +27,8 @@ vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})
 vim.keymap.set('n', '<C-s>', ':w', {})
 vim.keymap.set('n', '<C-q>', ':q', {})
 
+-- Center vertical navigation
+vim.keymap.set('n', '<C-u>', '<C-u>zz', {})
+vim.keymap.set('n', '<C-d>', '<C-d>zz', {})
+
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
