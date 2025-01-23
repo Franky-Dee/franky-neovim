@@ -2,10 +2,20 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
-        -- add any options here
+        notify = {
+            render = "simple",
+        },
     },
     dependencies = {
         "MunifTanjim/nui.nvim",
-        "rcarriga/nvim-notify",
-    }
+        {
+            "rcarriga/nvim-notify",
+            config = function()
+                require("notify").setup({
+                    stages = "fade",
+                })
+            end,
+        },
+    },
 }
+
