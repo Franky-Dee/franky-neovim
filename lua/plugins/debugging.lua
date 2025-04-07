@@ -26,7 +26,7 @@ return {
 
         dap.adapters.python = {
             type = 'executable',
-            command = '/home/franky/Desktop/Workspaces/12.0/virtual-environments/venv/bin/python3.8',
+            command = '/home/franky/Desktop/Workspaces/12.0/virtual-environments/myEnv/bin/python3.7',
             args = { '-m', 'debugpy.adapter' },
         }
 
