@@ -41,9 +41,22 @@ return {
                     '--config=/home/franky/Desktop/Workspaces/12.0/conf/odoo.conf',
                     '--limit-time-real=10000000',
                     -- '--test-enable',
-                    -- '--test-tags=loan',
                 },
                 cwd = '/home/franky/Desktop/Workspaces/12.0/odoo',
+                console = 'internalConsole',
+            },
+            {
+                type = 'python',
+                request = 'launch',
+                name = 'Odoo 14',
+                program = '/home/franky/Desktop/Workspaces/14.0/odoo/odoo-bin',
+                pythonPath = '/home/franky/Desktop/Workspaces/14.0/virtual-environments/venv/bin/python3.8',
+                args = {
+                    '--config=/home/franky/Desktop/Workspaces/14.0/conf/odoo.conf',
+                    '--limit-time-real=10000000',
+                    -- '--test-enable',
+                },
+                cwd = '/home/franky/Desktop/Workspaces/14.0/odoo',
                 console = 'internalConsole',
             }
         }
