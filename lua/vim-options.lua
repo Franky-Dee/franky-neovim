@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
-vim.api.nvim_set_option("clipboard", "unnamed")
+-- Clipboard
+vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 -- Line Numbers --
 vim.opt.nu = true
