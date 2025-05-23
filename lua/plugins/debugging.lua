@@ -9,9 +9,9 @@ return {
         local dapui = require("dapui")
 
         -- Define custom highlight groups
-        vim.api.nvim_set_hl(0, "DapBreakpointText", { fg = "#00FF00", bold = true }) -- Green for the dot
-        vim.api.nvim_set_hl(0, "DapBreakpointLine", { bg = "#3B4252" })          -- Dim background for the line
-        vim.api.nvim_set_hl(0, "DapBreakpointNum", { fg = "#00FF00", bold = true }) -- Green for the line number
+        vim.api.nvim_set_hl(0, "DapBreakpointText", { fg = "#ffb86c", bold = true })
+        vim.api.nvim_set_hl(0, "DapBreakpointLine", { bg = "#3B4252" })
+        vim.api.nvim_set_hl(0, "DapBreakpointNum", { fg = "#ffb86c", bold = true })
 
         -- Define custom sign for breakpoints with highlight groups
         vim.fn.sign_define('DapBreakpoint', {
@@ -41,6 +41,8 @@ return {
                     '--config=/home/franky/Desktop/Workspaces/12.0/conf/odoo.conf',
                     '--limit-time-real=10000000',
                     -- '--test-enable',
+                    -- '--log-level=test',
+                    -- '--test-tags', 'module',
                 },
                 cwd = '/home/franky/Desktop/Workspaces/12.0/odoo',
                 console = 'internalConsole',
