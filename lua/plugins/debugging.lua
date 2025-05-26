@@ -9,9 +9,9 @@ return {
         local dapui = require("dapui")
 
         -- Define custom highlight groups
-        vim.api.nvim_set_hl(0, "DapBreakpointText", { fg = "#ffb86c", bold = true })
+        vim.api.nvim_set_hl(0, "DapBreakpointText", { fg = "#ff9e64", bold = true })
         vim.api.nvim_set_hl(0, "DapBreakpointLine", { bg = "#3B4252" })
-        vim.api.nvim_set_hl(0, "DapBreakpointNum", { fg = "#ffb86c", bold = true })
+        vim.api.nvim_set_hl(0, "DapBreakpointNum", { fg = "#ff9e64", bold = true })
 
         -- Define custom sign for breakpoints with highlight groups
         vim.fn.sign_define('DapBreakpoint', {
