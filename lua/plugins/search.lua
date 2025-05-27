@@ -54,6 +54,13 @@ return {
                             vim.cmd("TodoTelescope")
                         end,
                     },
+                    {
+                        name = "Aerial",
+                        tele_func = function(opts)
+                            opts = opts or {}
+                            require('telescope').extensions.aerial.aerial(opts)
+                        end,
+                    },
                 },
             })
 
