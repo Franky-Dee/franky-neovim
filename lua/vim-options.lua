@@ -25,7 +25,7 @@ vim.keymap.set('n', '<Leader>sv', ':vsplit<CR>', {})
 vim.keymap.set('n', '<Leader>sx', ':close<CR>', {})
 
 -- Save and Quit
-vim.keymap.set('n', '<C-s>', ':w<CR>', {})
+vim.keymap.set('n', '<C-s>', ':wa<CR>', {})
 vim.keymap.set('n', '<C-q>', ':q<CR>', {})
 
 -- Center vertical navigation

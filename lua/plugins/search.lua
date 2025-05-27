@@ -47,6 +47,13 @@ return {
                             return vim.fn.isdirectory(".git") == 1
                         end,
                     },
+                    {
+                        name = "Todo",
+                        tele_func = function(opts)
+                            opts = opts or {}
+                            vim.cmd("TodoTelescope")
+                        end,
+                    },
                 },
             })
 
