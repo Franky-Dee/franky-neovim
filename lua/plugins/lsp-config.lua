@@ -7,15 +7,6 @@ return {
         end
     },
     {
-        -- Bridge between mason and lspconfig
-        "williamboman/mason-lspconfig.nvim",
-        config = function()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "pylsp" } -- Add other LSP servers as needed
-            })
-        end
-    },
-    {
         -- LSP config
         "neovim/nvim-lspconfig",
         config = function()
@@ -27,20 +18,41 @@ return {
                 capabilities = capabilities
             })
 
-            lspconfig.pylsp.setup({
-                capabilities = capabilities,
+            lspconfig.pylsp.setup {
                 settings = {
                     pylsp = {
+                        configurationSources = { 'flake8' },
                         plugins = {
+                            flake8 = {
+                                enabled = false,
+                                ignore = { 'E501', 'E231' },
+                                maxLineLength = 88,
+                            },
+                            black = {enabled = true},
+                            autopep8 = { enabled = false },
+                            mccabe = {enabled = true},
                             pycodestyle = {
                                 enabled = true,
-                                ignore = { "E501" }, -- E501 = line too long
-                                maxLineLength = 120, -- optional: increase line limit if you still want long lines allowed
+                                ignore = { 'E501', 'E231' },
+                                maxLineLength = 88,
+                            },
+                            pyflakes = {enabled = true},
+                            jedi_completion = {
+                                include_params = true,
+                            },
+                            jedi_signature_help = {enabled = true},
+                            jedi = {
+                                extra_paths = {
+                                    '/home/franky/Desktop/Workspaces/12.0/odoo/',
+                                    '/home/franky/Desktop/Workspaces/12.0/taskflow/',
+                                    '/home/franky/Desktop/Workspaces/12.0/taskflow-config/'
+                                },
                             },
                         },
                     },
                 },
-            })
+                root_dir = "/home/franky/Desktop/Workspaces/",
+            }
 
             -- LSP key mappings
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
