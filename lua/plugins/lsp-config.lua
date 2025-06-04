@@ -11,7 +11,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls" } -- Add other LSP servers as needed
+                ensure_installed = { "lua_ls", "pylsp" } -- Add other LSP servers as needed
             })
         end
     },
