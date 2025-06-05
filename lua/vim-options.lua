@@ -42,3 +42,11 @@ vim.keymap.set('n', '<A-l>', '<C-w>l', {})
 
 -- Remove Search
 vim.keymap.set('n', '<Leader>n', ':noh<CR>', {})
+
+-- Conceal Level
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.wo.conceallevel = 2
+    end,
+})
