@@ -4,6 +4,17 @@ return {
         dependencies = { 'nvim-lua/plenary.nvim' },
         config = function()
             require('telescope').setup({
+                defaults = {
+                    layout_strategy = "horizontal",
+                    layout_config = {
+                        horizontal = {
+                            preview_width = 0.6,
+                            prompt_position = "top",
+                        },
+                        width = 0.8,
+                        height = 0.9,
+                    },
+                },
                 extensions = {
                     ["ui-select"] = {
                         require("telescope.themes").get_dropdown({})
