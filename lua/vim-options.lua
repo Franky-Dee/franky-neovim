@@ -43,6 +43,10 @@ vim.keymap.set('n', '<A-l>', '<C-w>l', {})
 -- Remove Search
 vim.keymap.set('n', '<Leader>n', ':noh<CR>', {})
 
+-- Remap 'jk' and 'kj' in insert mode to escape
+vim.keymap.set('i', 'jk', '<Esc>', { noremap = true, silent = true })
+vim.keymap.set('i', 'kj', '<Esc>', { noremap = true, silent = true })
+
 -- Conceal Level
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
